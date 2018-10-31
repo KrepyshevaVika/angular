@@ -1,0 +1,49 @@
+.inner-ul {
+    margin: 0px;
+    padding: 10px 10px 0px 20px;
+  }
+
+.li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  
+  .divIcon {
+    width: 15px;
+    height: 40px;
+  }
+  
+  .item:focus { 
+    outline: 2px dashed green; 
+  }
+  
+  .line { 
+    outline: 2px dashed green; 
+  }
+  
+  .text {
+    white-space: pre;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .item{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    /*position: relative;*/
+  }
+  
+  .item .icon{
+    font-size: 30px;
+  }   
+  
+  .item:hover .btnCanOpen{
+    display: inline-block;
+  }
+  
+  .item .btn{
+    display: none; 
+    margin-right: 5px;
+    border-radius: 5px !important;
+  }

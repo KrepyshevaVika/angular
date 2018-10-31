@@ -1,0 +1,17 @@
+.main-component {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+.inner-main {
+    width: 300px;
+    outline: 2px solid  gray;
+    padding: 10px;
+    height: 550px;
+  } 
+
+.ul {
+  overflow: auto;
+  height: 500px;
+}

@@ -1,0 +1,8 @@
+.icon-sort {
+    cursor: pointer;
+    transition: transform .5s ease, color .5s ease;
+  }  
+  
+  .active {
+    transform: rotate(180deg);
+  }  

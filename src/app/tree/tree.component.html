@@ -1,0 +1,15 @@
+<div class="main-component">
+  <div class="inner-main">
+    <button type="button" class="btn btn-success" 
+            (click)="list.handleInsert($event, null)">+</button>
+    
+    <div class="ul">
+      <app-list #list [nodes]="nodes" [selectedNode]="(!isEmpty(infoAboutNode) ? infoAboutNode.id : null)"></app-list>
+    </div>
+  </div>
+
+  <div class="inner-main">   
+    <app-form-with-fields [data]="infoAboutNode" *ngIf="!isEmpty(infoAboutNode)">
+    </app-form-with-fields>
+  </div>
+</div>

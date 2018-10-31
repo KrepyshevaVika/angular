@@ -1,0 +1,14 @@
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item" *ngFor="let node of nodes" [ngStyle]="{'background':rndColor()}">
+      <div>
+          {{node.id}}
+      </div>
+      <div>
+          {{node.name}}
+      </div>
+      <div>
+          {{node.description}}
+      </div>
+  </div>
+</div>

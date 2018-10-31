@@ -1,0 +1,36 @@
+<ul class="inner-ul" *ngFor="let node of nodes">
+  <li class="li">
+
+    <div class="item" (click)="handleToLoad($event, node)"
+        [class.line]="(selectedNode == node.id)"> 
+      <div class="divIcon">
+        <fa-icon [icon]="faAngleRight" 
+                class="icon" 
+                [@openClose]="(node.children && node.children.length > 0)?'open':'closed'"
+                *ngIf="(node.count_child > 0)"></fa-icon>
+      </div>
+
+      <div class="text">
+        {{node.name}}
+      </div>
+
+      <div class="btn-group">
+        <button type="button" 
+                *ngIf="!node.node_type.is_endpoint"
+                class="btn btn-success btnCanOpen"
+                (click)="handleInsert($event, node)">+
+        </button>
+        <button type="button" 
+                class="btn btn-danger btnCanOpen"
+                (click)="handleDelete($event, node)">&ndash;
+        </button>
+      </div>
+
+    </div> 
+
+    <app-list [nodes]="node.children" 
+      *ngIf="node.children"
+      [selectedNode]="selectedNode"></app-list>
+  </li>
+</ul>
+

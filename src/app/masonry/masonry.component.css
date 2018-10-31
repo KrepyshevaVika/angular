@@ -1,0 +1,10 @@
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
